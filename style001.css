@@ -1,0 +1,124 @@
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+  
+  body {
+      background-image: url("assets/BackgroundOpening002.png");
+      background-repeat: repeat-y;
+      background-size: 100%;
+      font-family: Calibri, Arial, sans-serif;
+    }
+  
+  h1 {
+      font-family: 'Press Start 2P';
+      font-size: 80px;
+      color: #000000;
+      letter-spacing: 0.0em;
+      -webkit-text-stroke: 1px #575757;
+      text-align: center;
+    }
+  
+  h2 {
+      font-family: 'Press Start 2P';
+      font-size: 25px;
+      color: white;
+      opacity: 1;
+      padding: 0px;
+  }
+  
+  p {
+      font-family: 'Kdam Thmor Pro';
+      font-size: 18px;
+      color: white;
+      line-height: 1.6;
+      padding: 20px;
+    }
+  
+  #topbanner {
+    border: 0px solid black;
+    padding: 0px;
+    top: 0px;
+    left: 0px;
+    background: url(assets/BackgroundOpening001.png);
+    background-size: auto;
+  }
+  
+  .rotate {
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+  }
+  
+  @-moz-keyframes spin {
+      100% { -moz-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+      100% { -webkit-transform: rotate(360deg); }
+  }
+  @keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform:rotate(360deg);
+      }
+    }
+  
+  .content {
+    width: 100%;
+    align-items: top;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    justify-content: space-between;
+  }
+  
+  .container {
+    display: inline;
+    align: top;
+    position: relative;
+    float: left;
+    width: 30%;
+    top: 100px;
+    left: 50px;
+    right: 50px;
+  
+  }
+  
+  .info {
+    display: inline;
+    border: 10px solid #152238;
+    float: right;
+    clear: left;
+    padding: 35px;
+    top: 5px;
+    left: 5px;
+    background-color: black;
+    border-radius: 10px;
+    width: 70%;
+  }
+  
+  
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .0s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    text-align: center;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  

@@ -1,0 +1,172 @@
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+body {
+    background-image: url("assets/BackgroundOpening001.png");
+    background-repeat: repeat-y;
+    background-size: 100%;
+    font-family: Calibri, Arial, sans-serif;
+  }
+
+  #topbanner {
+    border: 0px solid black;
+    width: 700px;
+    background: url("assets/BackgroundOpening002.png");
+    background-size: auto;
+  }
+
+h1 {
+    font-family: 'Monofett';
+    font-size: 80px;
+    color: #152238;
+    text-align: center;
+  }
+
+h2 {
+    font-family: 'Press Start 2P';
+    font-size: 25px;
+    color: white;
+    opacity: 1;
+    padding: 0px;
+}
+
+p {
+    font-family: 'Kdam Thmor Pro';
+    font-size: 18px;
+    color: white;
+    line-height: 1.6;
+    padding: 20px;
+  }
+
+.info {
+  background-color: black;
+  color: white;
+  margin-top: 100px;
+  border: white;
+  border-radius: 8px;
+}
+
+.deadendparent {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .deadendinfo {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background-color: white;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+  }
+
+.image1 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+
+.image1a {
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  width: 1800px;
+  z-index: 1;
+}
+
+.image2 {
+  position: absolute;
+  top: 568px;
+  left: 725px;
+  z-index: 2;
+  width: 500px;
+}
+.image2:hover {
+    background: url("assets/bedt002.gif") no-repeat;
+    size: 600 px;
+}
+
+.image3 {
+  position: absolute;
+  top: 770px;
+  left: 1102px;
+  z-index: 2;
+  width: 400px;
+}
+.image3:hover {
+    background: url("assets/tvt002.gif") no-repeat;
+}
+
+
+.image4 {
+  position: absolute;
+  top: 805px;
+  left: 255px;
+  z-index: 2;
+  width: 580px;
+}
+.image4:hover {
+    background: url("assets/coucht002.gif") no-repeat;
+}
+
+
+.image5 {
+  position: absolute;
+  top: 380px;
+  left: 1025px;
+  z-index: 2;
+  width: 200px;
+}
+.image5:hover {
+    background: url("assets/windowt002.gif") no-repeat;
+    position: absolute;
+    top: 380px;
+    left: 1025px;
+    z-index: 3;   
+}
+
+
+.image6 {
+  position: absolute;
+  top: 1050px;
+  left: 700px;
+  z-index: 2;
+  width: 400px;
+}
+.image6:hover {
+    background: url("assets/deskt002.gif") no-repeat;
+    position: absolute;
+    top: 1050px;
+    left: 700px;
+    width: 400 px;
+    z-index: 1;   
+}
+
+
+.image2, .image3, .image4, .image5, .image6 {
+  -webkit-animation: mover 0.5s infinite  alternate;
+  animation: mover 0.5s infinite  alternate;
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: -webkit-transform 0.2s;
+	transition: transform 0.2s;
+	transition: transform 0.2s, -webkit-transform 0.2s; 
+}
+
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+  
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+
+
+
